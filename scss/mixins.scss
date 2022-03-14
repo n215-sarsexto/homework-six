@@ -1,0 +1,42 @@
+@mixin location() {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  width: 236px;
+  height: 304px;
+  font-family: proxima-nova, sans-serif;
+
+  .inside {
+    margin: auto;
+    padding: 49px 0;
+    font-size: 20px;
+    p {
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+    button {
+      width: 133px;
+      background-color: $site-blue;
+      color: #fff;
+      border-radius: 20px;
+      padding: 10px;
+      border-style: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin location-background($bg-img: url("../images/israel.png")) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    $bg-img;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin tour-background($bg-img: url("../images/israel-tour-01.png")) {
+  background-image: $bg-img;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

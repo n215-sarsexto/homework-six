@@ -1,0 +1,81 @@
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+  width: $content-width;
+  margin: 0 auto;
+  font-family: gill-sans-nova, sans-serif;
+  .about-header {
+    padding-top: 90px;
+    margin-bottom: 107px;
+    font-family: proxima-nova, sans-serif;
+
+    span {
+      font-weight: lighter;
+      font-size: 72px;
+    }
+    hr {
+      width: 177px;
+      border: 2px solid;
+      margin-bottom: 37px;
+    }
+    p {
+      word-wrap: normal;
+    }
+  }
+  .about-client-quotes {
+    span {
+      font-weight: lighter;
+      font-size: 42px;
+    }
+    hr {
+      width: 255px;
+      border: 1px solid;
+    }
+
+    .client-quote {
+      margin-top: 37px;
+      margin-bottom: 37px;
+      max-width: 722px;
+      display: flex;
+      position: relative;
+      .client-quote-image {
+        width: 260px;
+        height: 150px;
+        overflow: hidden;
+        margin-right: 21px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .client-quote-text {
+        max-width: 440px;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .client-quote-name {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: $site-blue;
+        font-family: proxima-nova, sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+@media all and (max-width: 900px) {
+  .about {
+    width: 90%;
+    .about-client-quotes {
+      .client-quote {
+        flex-direction: column;
+        .client-quote-image {
+          margin: 0 auto;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}

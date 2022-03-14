@@ -1,0 +1,18 @@
+{
+  "name": "homework-four",
+  "version": "1.0.0",
+  "description": "Web4 Link to Homework\r https://in-info-web4.informatics.iupui.edu/~sarsexto/homework-three/index.html",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile:sass": "sass scss/style.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

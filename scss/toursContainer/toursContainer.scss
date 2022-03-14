@@ -1,0 +1,56 @@
+.toursContainer {
+  width: $content-width;
+  margin: 0 auto;
+  .toursRow {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 55px;
+
+    .tour {
+      @include location;
+    }
+
+    #israel {
+      @include location-background;
+    }
+    #america {
+      @include location-background(url("../images/america.png"));
+    }
+    #australia {
+      @include location-background(url("../images/australia.png"));
+    }
+    #new-zealand {
+      @include location-background(url("../images/new-zealand.png"));
+    }
+    #france {
+      @include location-background(url("../images/france.png"));
+    }
+    #egypt {
+      @include location-background(url("../images/egypt.png"));
+    }
+    #japan {
+      @include location-background(url("../images/japan.png"));
+    }
+    #canada {
+      @include location-background(url("../images/canada.png"));
+    }
+    #uae {
+      @include location-background(url("../images/uae.png"));
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .toursContainer {
+    width: 100%;
+    .toursRow {
+      flex-direction: column;
+      min-height: 920px;
+      margin-top: 0px;
+      .tour {
+        margin-top: 35px;
+      }
+    }
+  }
+}

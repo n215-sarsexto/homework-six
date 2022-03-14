@@ -1,0 +1,112 @@
+.tourImages {
+  width: $content-width;
+  height: 350px;
+  margin: 20px auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  .tourImage {
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  #israel1 {
+    @include tour-background;
+  }
+  #israel2 {
+    @include tour-background($bg-img: url("../images/israel-tour-02.png"));
+  }
+  #israel3 {
+    @include tour-background($bg-img: url("../images/israel-tour-03.png"));
+  }
+
+  #usa1 {
+    @include tour-background($bg-img: url("../images/usa-tour-01.png"));
+  }
+  #usa2 {
+    @include tour-background($bg-img: url("../images/usa-tour-02.png"));
+  }
+  #usa3 {
+    @include tour-background($bg-img: url("../images/usa-tour-03.png"));
+  }
+
+  #australia1 {
+    @include tour-background($bg-img: url("../images/aus-tour-01.png"));
+  }
+  #australia2 {
+    @include tour-background($bg-img: url("../images/aus-tour-02.png"));
+  }
+  #australia3 {
+    @include tour-background($bg-img: url("../images/aus-tour-03.png"));
+  }
+
+  #new-zealand1 {
+    @include tour-background($bg-img: url("../images/nz-tour-01.png"));
+  }
+  #new-zealand2 {
+    @include tour-background($bg-img: url("../images/nz-tour-02.png"));
+  }
+  #new-zealand3 {
+    @include tour-background($bg-img: url("../images/nz-tour-03.png"));
+  }
+
+  #france1 {
+    @include tour-background($bg-img: url("../images/france-tour-01.png"));
+  }
+  #france2 {
+    @include tour-background($bg-img: url("../images/france-tour-02.png"));
+  }
+  #france3 {
+    @include tour-background($bg-img: url("../images/france-tour-03.png"));
+  }
+
+  #egypt1 {
+    @include tour-background($bg-img: url("../images/egypt-tour-01.png"));
+  }
+  #egypt2 {
+    @include tour-background($bg-img: url("../images/egypt-tour-02.png"));
+  }
+  #egypt3 {
+    @include tour-background($bg-img: url("../images/egypt-tour-03.png"));
+  }
+
+  #japan1 {
+    @include tour-background($bg-img: url("../images/japan-tour-01.png"));
+  }
+  #japan2 {
+    @include tour-background($bg-img: url("../images/japan-tour-02.png"));
+  }
+  #japan3 {
+    @include tour-background($bg-img: url("../images/japan-tour-03.png"));
+  }
+
+  #canada1 {
+    @include tour-background($bg-img: url("../images/canada-tour-01.png"));
+  }
+  #canada2 {
+    @include tour-background($bg-img: url("../images/canada-tour-02.png"));
+  }
+  #canada3 {
+    @include tour-background($bg-img: url("../images/canada-tour-03.png"));
+  }
+
+  #uae1 {
+    @include tour-background($bg-img: url("../images/uae-tour-01.png"));
+  }
+  #uae2 {
+    @include tour-background($bg-img: url("../images/uae-tour-02.png"));
+  }
+  #uae3 {
+    @include tour-background($bg-img: url("../images/uae-tour-03.png"));
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tourImages {
+    width: 100%;
+    min-height: 1100px;
+    flex-direction: column;
+  }
+}

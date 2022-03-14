@@ -1,0 +1,32 @@
+.destinationContainer {
+  width: $content-width;
+  height: 304px;
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  .destination {
+    @include location;
+  }
+
+  #israel {
+    @include location-background;
+  }
+  #america {
+    @include location-background(url("../images/america.png"));
+  }
+  #australia {
+    @include location-background(url("../images/australia.png"));
+  }
+}
+
+@media all and (max-width: 900px) {
+  .destinationContainer {
+    width: 100%;
+    flex-direction: column;
+    min-height: 920px;
+  }
+}

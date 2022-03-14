@@ -1,0 +1,51 @@
+footer {
+  width: 100%;
+  height: 10%;
+  background-color: $site-blue;
+  color: $base;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gill-sans-nova, sans-serif;
+  position: relative;
+
+  .logo {
+    border: 2px solid #fff;
+    width: max-content;
+    padding: 5px;
+    position: absolute;
+    left: 5%;
+  }
+  .social {
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    span {
+      margin-left: 15px;
+    }
+  }
+}
+@media all and (max-width: 900px) {
+  footer {
+    height: max-content;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .logo {
+      position: static;
+      margin: 0 auto;
+    }
+    p {
+      padding-top: 20px;
+    }
+    .social {
+      position: static;
+      span {
+        margin-left: 0;
+        font-size: 30px;
+      }
+    }
+  }
+}

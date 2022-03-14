@@ -1,0 +1,56 @@
+.hero-tour {
+  height: 413px;
+  width: $content-width;
+  position: relative;
+  margin: 50px auto;
+  color: $base;
+  font-family: proxima-nova, sans-serif;
+  .hero-tour-text {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    font-size: 80px;
+  }
+  .hero-tour-price {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+#israel {
+  @include location-background($bg-img: url("../images/israel.png"));
+}
+#america {
+  @include location-background($bg-img: url("../images/america.png"));
+}
+#australia {
+  @include location-background($bg-img: url("../images/australia.png"));
+}
+#new-zealand {
+  @include location-background($bg-img: url("../images/new-zealand.png"));
+}
+#france {
+  @include location-background($bg-img: url("../images/france.png"));
+}
+#egypt {
+  @include location-background($bg-img: url("../images/egypt.png"));
+}
+#japan {
+  @include location-background($bg-img: url("../images/japan.png"));
+}
+#canada {
+  @include location-background($bg-img: url("../images/canada.png"));
+}
+#uae {
+  @include location-background($bg-img: url("../images/uae.png"));
+}
+
+@media all and (max-width: 900px) {
+  .hero-tour {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
